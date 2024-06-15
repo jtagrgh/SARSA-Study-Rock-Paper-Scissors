@@ -1,0 +1,33 @@
+Want to know how many past actions should be stored in current state.
+Just player actions or also bot actions?
+Maybe bot actions are reflected in player actions?
+
+t  bot  player  reward  state
+0  R    P       -1      _,_,_
+1  R    S       +1      _,_,P 
+2  P    S       -1      _,P,S
+3  R    R        0      P,S,S
+4  S    R       -1
+5  S    R       -1
+
+
+
+
+
+
+
+[R] <-> [P] <-> [S]
+
+Q(R,r) = Q(R,r) + [gain +
+
+
+
+
+Human strategy from reddit:
+	1. If you won the last round: play next what your opponent just played.
+	2. If you lost the last round: play the thing that didn’t come up.
+
+	i.e.
+
+	1. If you lost, play what would beat them
+	2. If you win, they will try (1), so counter
